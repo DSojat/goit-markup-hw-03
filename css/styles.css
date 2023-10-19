@@ -89,14 +89,11 @@ ul {
   margin: 0;
 }
 
-.menu-item {
-  padding: 24px 0;
-}
-
 .menu-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .menu-link:hover,
