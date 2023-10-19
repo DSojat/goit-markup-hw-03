@@ -76,13 +76,18 @@ ul {
 }
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .page-header .logotype-span {
   color: #2e2f42;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 24px 0;
 }
 
 .menu-link {
@@ -119,16 +124,11 @@ ul {
   align-items: center;
 }
 
-.menu {
-  display: flex;
-  gap: 40px;
-  margin: 0;
-}
-
 .contacts {
   display: flex;
   gap: 40px;
   margin: 0;
+  padding: 24px 0;
 }
 /* === /Header styles === */
 
@@ -183,6 +183,16 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.features {
+  display: flex;
+  padding-left: 0;
+  gap: 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 3 * 24px));
+}
+
 .features-name {
   color: #2e2f42;
   font-size: 20px;
@@ -191,12 +201,6 @@ ul {
   /* 120% */
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-}
-
-.features {
-  display: flex;
-  padding-left: 0;
-  gap: 24px;
 }
 /* === /Features style === */
 
@@ -227,6 +231,14 @@ ul {
 .team-item {
   background: #fff;
   flex-basis: calc((100% - 3 * 24px));
+  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-item-container {
+  padding: 32px 0;
 }
 
 .team-member {
@@ -237,12 +249,10 @@ ul {
   line-height: 1.2;
   /* 120% */
   letter-spacing: 0.02em;
-  margin-top: 32px;
 }
 
 .team-text {
   text-align: center;
-  margin-bottom: 32px;
 }
 /* === /Team section style === */
 
@@ -252,6 +262,7 @@ ul {
   flex-wrap: wrap;
   padding-left: 0;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-top {
@@ -264,11 +275,13 @@ ul {
   /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-bottom: 72px;
+  margin-bottom: 8px;
 }
 
-.portfolio-item {
-  border-bottom: 1px solid #e7e9fc;
+.portfolio-item-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-subject {
@@ -278,11 +291,6 @@ ul {
   line-height: 1.2;
   /* 120% */
   letter-spacing: 0.02em;
-  margin-top: 32px;
-}
-
-.portfolio-text {
-  margin-bottom: 32px;
 }
 /* === /Portfolio section style === */
 
