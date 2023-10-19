@@ -13,6 +13,22 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .link {
   text-decoration: none;
 }
@@ -21,6 +37,29 @@ address {
   list-style-type: none;
 }
 
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* === /Common styles === */
 
 /* === Header styles === */
@@ -35,6 +74,12 @@ address {
   text-transform: uppercase;
 }
 
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header .logotype-span {
   color: #2e2f42;
 }
@@ -47,11 +92,11 @@ address {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #404BBF;
+  color: #404bbf;
 }
 
 .menu-link:active {
-  color: #404BBF;
+  color: #404bbf;
 }
 
 .contacts-link {
@@ -63,21 +108,47 @@ address {
   color: #404bbf;
 }
 
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.contacts {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
 /* === /Header styles === */
 
 /* === HERO === */
 .page-hero {
-  background-color: #2E2F42;
+  background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-top {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   /* 107.143% */
   letter-spacing: 0.02em;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -89,13 +160,19 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background: #404bbf;
 }
-
 /* === /HERO === */
 
 /* === Features style === */
@@ -104,19 +181,25 @@ address {
 }
 
 .features-name {
-  color: #2E2F42;
+  color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   /* 120% */
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
+.features {
+  display: flex;
+  padding-left: 0;
+  gap: 24px;
+}
 /* === /Features style === */
 
 /* === Team section style === */
 .page-team {
-  background: #F4F4FD;
+  background: #f4f4fd;
 }
 
 .team-top {
@@ -129,10 +212,17 @@ address {
   /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team {
+  display: flex;
+  padding-left: 0;
+  gap: 24px;
 }
 
 .team-item {
-  background: #FFF;
+  background: #fff;
 }
 
 .team-member {
@@ -143,15 +233,23 @@ address {
   line-height: 1.2;
   /* 120% */
   letter-spacing: 0.02em;
+  margin-top: 32px;
 }
 
 .team-text {
   text-align: center;
+  margin-bottom: 32px;
 }
-
 /* === /Team section style === */
 
 /* === Portfolio section style === */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 24px;
+}
+
 .portfolio-top {
   text-align: center;
   /* Header 2 */
@@ -162,6 +260,11 @@ address {
   /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-item {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .portfolio-subject {
@@ -171,21 +274,28 @@ address {
   line-height: 1.2;
   /* 120% */
   letter-spacing: 0.02em;
+  margin-top: 32px;
 }
 
+.portfolio-text {
+  margin-bottom: 32px;
+}
 /* === /Portfolio section style === */
 
 /* === Footer style === */
 .page-footer {
-  background: #2E2F42;
+  background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .page-footer .logotype-span {
-  color: #F4F4FD;
+  color: #f4f4fd;
 }
 
 .page-footer-text {
-  color: #F4F4FD;
+  color: #f4f4fd;
+  width: 264px;
+  margin-top: 16px;
 }
-
 /* === /Footer style === */
