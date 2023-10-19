@@ -87,6 +87,9 @@ ul {
   display: flex;
   gap: 40px;
   margin: 0;
+}
+
+.menu-item {
   padding: 24px 0;
 }
 
@@ -249,6 +252,7 @@ ul {
   line-height: 1.2;
   /* 120% */
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -275,7 +279,7 @@ ul {
   /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 
 .portfolio-item-container {
@@ -291,6 +295,7 @@ ul {
   line-height: 1.2;
   /* 120% */
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 /* === /Portfolio section style === */
 
